@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { ContactsComponent } from './contacts/contacts.component';
+import {ContactService} from './contact.service';
 
 @NgModule({
   declarations: [
@@ -12,7 +13,7 @@ import { ContactsComponent } from './contacts/contacts.component';
   imports: [
     BrowserModule
   ],
-  providers: [],
+  providers: [ContactService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
